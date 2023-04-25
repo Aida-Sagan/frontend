@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body {
+	background: #fafafa;
+	font-size: 16px;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	/*нет нижнего подчеркивания*/
+	text-decoration: none;
+	/*переклбчения между цветами*/
+	transition: color 600ms ease;
+}
+
+img {max-width: 100%}
+
+header {
+	width: 90%;
+	padding: 20px 5%;
+	background: #fff;
+	/*чобы мы могли легко расположить на нем элементы*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > .logo {
+	font-size:  25px;
+	font-weight: 700;
+}
+
+header > .nav {
+	position: relative;
+	left: -50px;
+}
+
+header > .nav a {
+	margin: 0 15px;
+	display: inline-block;
+	color: #a3a3a3;
+}
+
+header > .nav a:hover,
+header > .menu:hover{color: #4f4e4e}
+
+header > .menu {
+	cursor: pointer;
+	color: #a3a3a3;
+	font-size: 23px;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid silver;
+}
+
+#hidden-menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  background: #fff;
+  z-index: 10;
+  text-align: center;
+}
+
+#hidden-menu .close {
+  font-size: 40px;
+  float: right;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 600ms ease;
+}
+
+#hidden-menu .close:hover {color: #ccc}
+
+#hidden-menu h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#hidden-menu ul {list-style: none}
+
+#hidden-menu ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#hidden-menu ul li a {color: #333}
+#hidden-menu ul li a:hover {color: #ccc}
+
+.full-page,
+.bg-fixed {
+	height: 95vh;
+	background: url('../img/proga.jpg') no-repeat center center;
+	/*карттинка зафиксирована*/
+	background-attachment: fixed;
+	/*растянуть картинку на весь сайт*/
+	background-size: cover;
+	/*может состоять из несколько слоев*/
+	background-blend-mode: multiply;
+	background-color: #3b3b3b;
+	text-align: center;
+	color: white;
+}
+
+.full-page h1 {
+	padding-top: 250px;
+	font-size: 45px;
+	width:500px ;
+	margin: 0 auto;
+}
+
+.full-page h3 {
+	margin: 20px 0;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #ccc;
+}
+
+.full-page button,
+.bg-fixed button {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  cursor: pointer;
+  background: #ffc107;
+  color: #704404;
+  font-weight: 500;
+  transition: background 600ms ease;
+}
+
+
+.full-page button i,
+.bg-fixed button i {
+  margin-left: 5px;
+  transition: margin 600ms ease;
+}
+
+.full-page button:hover,
+.bg-fixed button:hover {background: #ff9800}
+
+.full-page button:hover i,
+.bg-fixed button:hover i {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.features > div {
+  width: 300px;
+  text-align: center;
+  margin: 50px 10px;
+}
+
+.features > div img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.features > div h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #454545;
+}
+
+.features > div p {font-weight: 200}
+
+.gallery {
+  width: 70%;
+  margin: 50px 15%;
+  position: relative;
+  left: 100px;
+}
+
+.gallery div {
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.gallery .arrow-prev,
+.gallery .arrow-next {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transition: all 600ms ease;
+}
+
+.gallery .arrow-prev:hover,
+.gallery .arrow-next:hover {transform: scale(1.4)}
+
+.gallery .arrow-prev {left: -50px}
+.gallery .arrow-next {right: -30px}
+
+.bg-fixed {
+  height: 300px;
+  background-image: url('../img/bg-fixed.jpg');
+}
+
+.bg-fixed h3 {
+  font-size: 25px;
+  padding-top: 130px;
+  margin-bottom: 20px;
+}
+
+.bg-fixed input {
+  padding: 14px 20px;
+  width: 300px;
+  font-size: 14px;
+  border: 0;
+  border-radius: 5px;
+  background: #fafafa;
+}
+
+footer {
+  width: 90%;
+  padding: 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .up-btn,
+footer .social div {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid silver;
+  cursor: pointer;
+  color: #3b3b3b;
+  transition: transform 600ms ease;
+}
+
+footer .up-btn:hover,
+footer .social div:hover {
+  transform: translateY(-10px);
+}
+
+footer .social div {
+  display: inline-block;
+  margin-left: 15px;
+}
