@@ -1,0 +1,154 @@
+footer {
+  background: #0F1214;
+}
+
+p.menu-footer{
+
+  &__production-title {
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+}
+
+a.menu-footer{
+
+  &__item{
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7F8589;
+  }
+}
+
+ul.menu-footer__items li {
+  margin-top: 9px;
+}
+
+a.menu-footer {
+  &__others {
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+}
+
+ul.menu-footer-second li{
+  margin-top: 18px;
+}
+
+.additional-menu {
+  margin-top: 32px;
+}
+
+.additional-menu-item {
+  margin-top: 25px;
+}
+
+.row-footer {
+  padding-top: 88px;
+  padding-bottom: 81px;
+}
+
+.row-right {
+  justify-content: right!important;
+}
+
+.menu-footer {
+
+  &__number-phone{
+    font-family: HelveticaNeueCyr;
+    font-size: 32px;
+    font-weight: 550;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+    &__make-call {
+      border-bottom: 1px solid #2B3032;
+      margin-top: 24px;
+
+      span{
+        display: inline-flex;
+
+        svg {
+          margin-left: -6px;
+        }
+
+        p {
+          font-family: HelveticaNeueCyr;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #FFFFFF;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+
+  &__mail {
+    display: inline-flex;
+    margin-top: 24px;
+
+    span{
+      display: inline-flex;
+
+      svg {
+        margin-left: -6px;
+      }
+      p {
+        font-family: HelveticaNeueCyr;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+.office {
+  margin-top: 66px;
+
+  &__title {
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  &__description {
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7F8589;
+  }
+}
+
+.second-footer {
+  border-top: 1px solid #1B1C1C;
+}

@@ -1,0 +1,92 @@
+body {
+  background: black;
+}
+
+header {
+  border-bottom: 1px solid #292B32;
+  height: 72px;
+}
+
+.container-header {
+  align-items: center;
+  padding-top: 14px;
+}
+
+.menu-header {
+  margin-right: 20px;
+}
+.menu-header .menu-header__items {
+  display: inline-flex;
+}
+.menu-header .menu-header__items .menu-header__items-link {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #CBCECF;
+  font-size: 12px;
+  position: relative;
+}
+.menu-header .menu-header__items .menu-header__items-link:hover {
+  color: #FFF;
+}
+.menu-header .menu-header__items .menu-header__items-link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+.menu-header .menu-header__items .menu-header__items-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #FF3E41;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  transition: 0.4s;
+  opacity: 0;
+}
+.menu-header .menu-header__items li {
+  list-style-type: none;
+}
+.menu-header .menu-header__items-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  transition: all 0.1s ease-out;
+  z-index: -1;
+}
+
+.phone-number {
+  margin-right: 20px;
+}
+.phone-number a {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.lang {
+  margin-right: 30px;
+}
+
+.right-block {
+  display: inline-flex;
+  gap: 14px;
+}
+
+/*# sourceMappingURL=header.css.map */

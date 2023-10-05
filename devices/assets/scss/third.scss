@@ -1,0 +1,132 @@
+// Общие стили для текста
+@mixin text-styles {
+  font-family: HelveticaNeueCyr;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+// Общие стили для ссылок
+@mixin link-styles {
+  color:  #FF3E41!important;
+  font-family: HelveticaNeueCyr;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-line: underline!important;
+}
+
+// Миксин для .container-third
+@mixin container-third {
+  text-align: center;
+}
+
+// Миксин для .centered-text
+@mixin centered-text {
+  margin-top: 20px;
+  width: 500px;
+  display: flex;
+  text-align: center;
+
+  p {
+    @include text-styles;
+    font-size: 40px;
+  }
+}
+
+// Миксин для .left-content
+@mixin left-content {
+  flex: 1;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 20px;
+
+  p.left-content-title {
+    @include text-styles;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  span p {
+    @include text-styles;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 29px;
+  }
+}
+
+// Миксин для .right-content
+@mixin right-content {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 19px;
+  width: 224px;
+
+  p {
+    @include text-styles;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  a {
+    @include link-styles;
+  }
+}
+
+// Миксин для .row-sides и .row-third
+@mixin row-styles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Миксин для .centered-image
+@mixin centered-image {
+  flex: 1;
+  text-align: center;
+
+  img {
+    width: 463px;
+  }
+}
+
+// Миксин для .row-third
+@mixin row-third {
+  @include row-styles;
+  background: #25292C;
+  border-radius: 33px;
+}
+
+.container-third {
+  @include container-third;
+}
+
+.centered-text {
+  @include centered-text;
+}
+
+.left-content {
+  @include left-content;
+}
+
+.centered-image {
+  @include centered-image;
+}
+
+.right-content {
+  @include right-content;
+}
+
+.row-sides, .row-third {
+  @include row-styles;
+}
+
+.row-third {
+  @include row-third;
+}

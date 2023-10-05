@@ -1,0 +1,167 @@
+// Миксин для общих текстовых стилей
+@mixin text-styles {
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// Миксин для общих ссылочных стилей
+@mixin link-styles {
+  @include text-styles;
+  color: #CBCECF;
+  font-size: 12px;
+}
+
+// Миксин для заголовков
+@mixin header-styles {
+  border-bottom: 1px solid #292B32;
+  height: 72px;
+}
+
+// Миксин для выравнивания элементов в .container-header
+@mixin align-center {
+  align-items: center;
+}
+
+// Миксин для создания меню с подчеркиванием при наведении
+@mixin menu-link-underline {
+  position: relative;
+
+  &:hover {
+    color: #FFF;
+
+    &::after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #FF3E41;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transition: 0.4s;
+    opacity: 0;
+  }
+}
+
+// Миксин для общих стилей для телефонного номера
+@mixin phone-number-styles {
+  margin-right: 20px;
+
+  a {
+    @include text-styles;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-align: right;
+    text-decoration: none;
+  }
+}
+
+// Миксин для общих стилей для элемента .lang
+@mixin lang-styles {
+  margin-right: 30px;
+}
+
+// Миксин для общих стилей для элемента .right-block
+@mixin right-block-styles {
+  display: inline-flex;
+  gap: 14px;
+}
+
+// Миксин для body
+@mixin body-styles {
+  background: black;
+}
+
+// Миксин для header
+@mixin header-container {
+  @include header-styles;
+}
+
+// Миксин для .container-header
+@mixin container-header-styles {
+  @include align-center;
+  padding-top: 14px;
+}
+
+// Миксин для .menu-header
+@mixin menu-header-styles {
+  margin-right: 20px;
+
+  .menu-header__items {
+    display: inline-flex;
+
+    .menu-header__items-link {
+      @include link-styles;
+      @include menu-link-underline;
+    }
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .menu-header__items-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    transition: all 0.1s ease-out;
+    z-index: -1;
+  }
+}
+
+// Миксин для .phone-number
+@mixin phone-number-container {
+  @include phone-number-styles;
+}
+
+// Миксин для .lang
+@mixin lang-container {
+  @include lang-styles;
+}
+
+// Миксин для .right-block
+@mixin right-block-container {
+  @include right-block-styles;
+}
+
+body {
+  @include body-styles;
+}
+
+header {
+  @include header-container;
+}
+
+.container-header {
+  @include container-header-styles;
+}
+
+.menu-header {
+  @include menu-header-styles;
+}
+
+.phone-number {
+  @include phone-number-container;
+}
+
+.lang {
+  @include lang-container;
+}
+
+.right-block {
+  @include right-block-container;
+}
