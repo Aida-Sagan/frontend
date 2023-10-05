@@ -1,15 +1,18 @@
 @charset "UTF-8";
 footer {
   background: #0F1214;
+  padding-top: 88px;
+  padding-bottom: 81px;
 }
 
 p.menu-footer__production-title {
   font-family: HelveticaNeueCyr;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
@@ -21,6 +24,10 @@ a.menu-footer__item {
   letter-spacing: 0em;
   text-align: left;
   color: #7F8589;
+  text-decoration: none;
+}
+a.menu-footer__item:hover {
+  color: #FFFFFF;
 }
 
 ul.menu-footer__items li {
@@ -30,15 +37,12 @@ ul.menu-footer__items li {
 a.menu-footer__others {
   font-family: HelveticaNeueCyr;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  font-weight: 700;
   color: #FFFFFF;
-}
-
-ul.menu-footer-second li {
-  margin-top: 18px;
 }
 
 .additional-menu {
@@ -55,19 +59,23 @@ ul.menu-footer-second li {
 }
 
 .row-right {
-  justify-content: right !important;
+  justify-content: flex-end !important;
 }
 
-/* ПОПРОБОВАТЬ МИКСИНЫ ТУТ тк есть повторы*/
+/* Используйте миксины для стилей номера телефона и почты */
 .menu-footer__number-phone {
   font-family: HelveticaNeueCyr;
-  font-size: 32px;
-  font-weight: 550;
-  line-height: 40px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  font-weight: 700;
   color: #FFFFFF;
+  font-size: 32px;
+  line-height: 40px;
 }
+
 .menu-footer__number-phone__make-call {
   border-bottom: 1px solid #2B3032;
   margin-top: 24px;
@@ -85,9 +93,9 @@ ul.menu-footer-second li {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  color: #FFFFFF;
   margin-top: 7px;
 }
+
 .menu-footer__mail {
   display: inline-flex;
   margin-top: 24px;
@@ -105,29 +113,34 @@ ul.menu-footer-second li {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  color: #FFFFFF;
   margin-top: 7px;
 }
 
+/* Используйте миксины для стилей офиса */
 .office {
   margin-top: 66px;
 }
+
 .office__title {
   font-family: HelveticaNeueCyr;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  font-weight: 700;
   color: #FFFFFF;
 }
+
 .office__description {
   font-family: HelveticaNeueCyr;
   font-size: 15px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  font-size: 15px;
+  line-height: 23px;
   color: #7F8589;
 }
 

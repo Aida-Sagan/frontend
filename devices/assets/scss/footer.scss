@@ -1,51 +1,64 @@
-footer {
-  background: #0F1214;
+// Миксин для общих текстовых стилей
+@mixin text-styles {
+  font-family: HelveticaNeueCyr;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-p.menu-footer{
+// Миксин для текстовых стилей с жирным шрифтом
+@mixin bold-text-styles {
+  @include text-styles;
+  font-weight: 700;
+}
 
-  &__production-title {
-    font-family: HelveticaNeueCyr;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
+// Миксин для общих стилей ссылок
+@mixin link-styles {
+  @include text-styles;
+  color: #7F8589;
+  text-decoration: none;
+
+  &:hover {
     color: #FFFFFF;
   }
 }
 
-a.menu-footer{
+// Миксин для стилей заголовка в подразделе футера
+@mixin footer-title-styles {
+  @include bold-text-styles;
+  color: #FFFFFF;
+}
 
-  &__item{
-    font-family: HelveticaNeueCyr;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #7F8589;
-  }
+// Миксин для стилей описания в подразделе футера
+@mixin footer-description-styles {
+  @include text-styles;
+  font-size: 15px;
+  line-height: 23px;
+  color: #7F8589;
+}
+
+footer {
+  background: #0F1214;
+  padding-top: 88px;
+  padding-bottom: 81px;
+}
+
+p.menu-footer__production-title {
+  @include footer-title-styles;
+}
+
+a.menu-footer__item {
+  @include link-styles;
 }
 
 ul.menu-footer__items li {
   margin-top: 9px;
 }
 
-a.menu-footer {
-  &__others {
-    font-family: HelveticaNeueCyr;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
-  }
-}
-
-ul.menu-footer-second li{
-  margin-top: 18px;
+a.menu-footer__others {
+  @include footer-title-styles;
 }
 
 .additional-menu {
@@ -62,91 +75,64 @@ ul.menu-footer-second li{
 }
 
 .row-right {
-  justify-content: right!important;
+  justify-content: flex-end !important;
 }
 
-.menu-footer {
+/* Используйте миксины для стилей номера телефона и почты */
+.menu-footer__number-phone {
+  @include bold-text-styles;
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 40px;
+}
 
-  &__number-phone{
-    font-family: HelveticaNeueCyr;
-    font-size: 32px;
-    font-weight: 550;
-    line-height: 40px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
+.menu-footer__number-phone__make-call {
+  border-bottom: 1px solid #2B3032;
+  margin-top: 24px;
 
-    &__make-call {
-      border-bottom: 1px solid #2B3032;
-      margin-top: 24px;
-
-      span{
-        display: inline-flex;
-
-        svg {
-          margin-left: -6px;
-        }
-
-        p {
-          font-family: HelveticaNeueCyr;
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 19px;
-          letter-spacing: 0em;
-          text-align: left;
-          color: #FFFFFF;
-          margin-top: 7px;
-        }
-      }
-    }
-  }
-
-  &__mail {
+  span {
     display: inline-flex;
-    margin-top: 24px;
+  }
 
-    span{
-      display: inline-flex;
+  span svg {
+    margin-left: -6px;
+  }
 
-      svg {
-        margin-left: -6px;
-      }
-      p {
-        font-family: HelveticaNeueCyr;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #FFFFFF;
-        margin-top: 7px;
-      }
-    }
+  span p {
+    @include text-styles;
+    margin-top: 7px;
   }
 }
 
+.menu-footer__mail {
+  display: inline-flex;
+  margin-top: 24px;
+
+  span {
+    display: inline-flex;
+  }
+
+  span svg {
+    margin-left: -6px;
+  }
+
+  span p {
+    @include text-styles;
+    margin-top: 7px;
+  }
+}
+
+/* Используйте миксины для стилей офиса */
 .office {
   margin-top: 66px;
+}
 
-  &__title {
-    font-family: HelveticaNeueCyr;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
-  }
+.office__title {
+  @include footer-title-styles;
+}
 
-  &__description {
-    font-family: HelveticaNeueCyr;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #7F8589;
-  }
+.office__description {
+  @include footer-description-styles;
 }
 
 .second-footer {
