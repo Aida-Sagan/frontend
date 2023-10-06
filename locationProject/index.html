@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница с UIkit 3</title>
+
+  <!-- Подключаем стили из UIkit 3 -->
+  <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue+Pro:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="uk-container uk-margin-large-top">
+  <div class="uk-grid uk-grid-collapse uk-flex-middle">
+    <div class="uk-width-1-2@m block-text">
+      <h2 class="block-text__title-field">Выбери участок в лучшей локации</h2>
+      <button class="uk-button uk-button-default uk-margin-small-right btn-river" id="btnVolga">На Волге</button>
+      <button class="uk-button uk-button-default uk-margin-small-right btn-river" id="btnValdai">На Валдае</button>
+      <button class="uk-button uk-button-default uk-margin-small-right btn-river" id="btnVazuza">На Вазузе</button>
+      <button class="uk-button uk-button-default btn-river" id="btnSeliger">На Селигере</button>
+
+      <div class="uk-margin-top" id="locationDescription">
+        Выберите локацию, чтобы узнать больше.
+      </div>
+
+      <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-top look-fields-btn" uk-toggle="target: #modal">
+        Смотреть участки
+      </button>
+    </div>
+    <div class="uk-width-1-2@m">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+        <ul class="uk-slider-items uk-child-width-1-1">
+          <li>
+            <img src="img/river_first.png" alt="Image 1">
+          </li>
+          <li>
+            <img src="img/river_second.png" alt="Image 2">
+          </li>
+          <li>
+            <img src="img/river_third.png" alt="Image 3">
+          </li>
+          <li>
+            <img src="img/river_fourth.png" alt="Image 4">
+          </li>
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Подключаем скрипты из UIkit 3 -->
+<script src="node_modules/uikit/dist/js/uikit.min.js"></script>
+<script src="node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

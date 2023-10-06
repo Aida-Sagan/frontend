@@ -1,0 +1,59 @@
+@import url('https://fonts.cdnfonts.com/css/bebas-neue');
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+
+// Миксин для текстовых стилей
+@mixin text-styles($font-family, $font-size, $font-weight, $line-height, $letter-spacing, $color, $text-align) {
+  font-family: $font-family, sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-align: $text-align;
+  color: $color;
+}
+
+.block-text {
+  padding: 20px;
+
+  &__title-field {
+    @include text-styles('Bebas Neue Pro', 52px, 700, 68px, 0.01em, #274562, left);
+  }
+}
+
+.look-fields-btn {
+  @include text-styles('Bebas Neue', 24px, 700, 26px, 0.02em, #274562, center);
+  background-color: transparent!important;
+  border: 1px solid #274562;
+  height: 56px;
+
+  &:hover {
+    background-color: #274562!important;
+    color: white;
+  }
+}
+
+#locationDescription {
+  @include text-styles('Open Sans', 24px, 400, 33.60px, normal, #274562, left);
+  word-wrap: break-word;
+}
+
+.btn-river {
+  margin-right: 10px;
+  @include text-styles('Open Sans', 20px, 400, normal, normal, #B1C3CF, center);
+  background-color: transparent;
+  cursor: pointer;
+  border: none!important;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0 10px!important;
+  text-transform: none!important;
+
+  &:hover, &:active {
+    @include text-styles('Open Sans', 20px, 400, normal, normal, white, center);
+    background-color: #274562;
+  }
+}
+
+.uk-modal-dialog {
+  background-color: transparent!important;
+  transform: translateY(70%)!important;
+}

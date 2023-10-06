@@ -1,0 +1,76 @@
+@import url("https://fonts.cdnfonts.com/css/bebas-neue");
+@import url("https://fonts.cdnfonts.com/css/open-sans");
+.block-text {
+  padding: 20px;
+}
+.block-text__title-field {
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #274562;
+}
+
+.look-fields-btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #274562;
+  background-color: transparent !important;
+  border: 1px solid #274562;
+  height: 56px;
+}
+.look-fields-btn:hover {
+  background-color: #274562 !important;
+  color: white;
+}
+
+#locationDescription {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #274562;
+  word-wrap: break-word;
+}
+
+.btn-river {
+  margin-right: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #B1C3CF;
+  background-color: transparent;
+  cursor: pointer;
+  border: none !important;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0 10px !important;
+  text-transform: none !important;
+}
+.btn-river:hover, .btn-river:active {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  background-color: #274562;
+}
+
+.uk-modal-dialog {
+  background-color: transparent !important;
+  transform: translateY(70%) !important;
+}
+
+/*# sourceMappingURL=style.css.map */
