@@ -12,9 +12,7 @@
     display: none !important;
   }
   .samokat-image {
-    width: inherit;
-    right: 0;
-    margin-top: 0;
+    display: none;
   }
   .purple-gradient {
     display: none;

@@ -101,6 +101,10 @@
   box-shadow: 0 4px 98px 0 rgba(255, 222, 64, 0.5882352941);
   margin-top: 36px;
 }
+.btn-part-club:hover {
+  background-color: #d7bb30;
+  color: white;
+}
 @media (max-width: 767px) {
   .btn-part-club {
     font-size: 14px;
@@ -325,6 +329,28 @@
   text-align: left;
   color: #C5C5C5;
   padding-bottom: 128px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.text-shadow.zoom-on-hover {
+  transition: transform 0.3s;
+}
+
+.text-shadow.zoom-on-hover:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
