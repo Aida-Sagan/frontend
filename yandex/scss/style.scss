@@ -1,0 +1,327 @@
+@font-face {
+  font-family: 'Yandex font';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yandex font';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yandex font';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.first-page {
+ background: linear-gradient(173deg, rgba(255, 122, 188, 0.2) 0%, transparent 100%);
+
+}
+
+.main-container {
+  padding-top: 124px;
+  padding-left: 40px;
+}
+
+.yandex-svg {
+  display: inline-flex;
+  gap: 7px;
+}
+
+.price-span {
+  display: inline-flex;
+}
+
+.yandex-title {
+  font-family: 'Yandex font', sans-serif;
+  color:  #21201F;
+  font-weight: 500;
+
+  &__promo {
+    font-family: 'Yandex font', sans-serif;
+    color:  #21201F;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    @media  (max-width: 767px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &__buy-abon {
+    font-family: 'Yandex font', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #21201F;
+  }
+}
+
+.purple-oval {
+  background: radial-gradient(100% 100% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+  color: #fff;
+  border-radius: 500px;
+  width: 79px;
+  height: 33px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-family: 'Yandex font', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0;
+
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: #555;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.btn-part-club {
+  color: #21201F;
+  font-size: 24px;
+  font-family: 'Yandex font', sans-serif;
+  font-weight: 500;
+  line-height: 22px;
+  word-wrap: break-word;
+  background-color: #FFDE40;
+  border-radius: 36px;
+  padding: 24px 48px 24px 48px;
+  box-shadow: 0 4px 98px 0 #FFDE4096;
+  margin-top: 36px;
+
+  @media (max-width: 767px){
+    font-size: 14px;
+    padding: 11px 48px 10px 48px;
+    position: fixed;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.text {
+  flex: 1;
+  z-index: 5555;
+}
+
+.image {
+  flex: 0;
+  margin-top: -126px;
+
+  .img-samokat {
+    width: 744px;
+    position: absolute;
+    left: 33%;
+    top: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: 768px) and (max-width: 999px) {
+      left: 50%;
+    }
+
+  }
+}
+
+.svg-text-society {
+  position: absolute;
+  top: 32%;
+  left: 45%;
+  z-index: 1;
+
+  @media (min-width: 1100px) and (max-width: 1200px){
+    top: 43%;
+    left: 50%;
+  }
+
+  @media (min-width: 1000px) and (max-width: 1099px){
+    top: 42%;
+    left: 52%;
+  }
+
+  @media (min-width: 768px) and (max-width: 999px){
+    top: 45%;
+    left: 70%;
+  }
+}
+
+.title-participant {
+  font-family: 'Yandex font', sans-serif;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  
+  @media (max-width: 767px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+.alert {
+  width: 400px;
+
+  p {
+    font-family: 'Yandex font', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #21201F;
+  }
+}
+
+.mini-text {
+  font-family: 'Yandex font', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  color:#21201F;
+  width: 442px;
+  margin-top: 42px;
+}
+
+.collage-photo {
+  margin-top: -193px;
+}
+.collage-photo {
+  position: relative;
+}
+
+.collage-photo-mobile {
+  display: none;
+}
+
+.silver {
+  position: absolute;
+  top: -115px;
+  right: 0;
+}
+
+.point-map {
+  position: absolute;
+  top: 81px;
+  left: -226px;
+}
+
+.cap {
+  position: absolute;
+  bottom: 0;
+  right: -131px;
+}
+
+.title-buy {
+  width: 407px;
+  font-family: 'Yandex font', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #21201F;
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 30px;
+  }
+}
+
+.description {
+  width: 419px;
+  margin-top: 48px;
+}
+
+.alert-second-block {
+  position: relative;
+}
+
+.shadow {
+  box-shadow: none!important;
+  position: absolute;
+  right: -71%;
+
+  @media (max-width: 767px) {
+    right: 0;
+    left: 0;
+    width: inherit;
+  }
+}
+
+.samokat-image {
+  position: absolute;
+  right: -83%;
+  margin-top: -239px;
+}
+
+.plus-yandex {
+  position: absolute;
+}
+
+.btn-abonement {
+  width: 285px;
+  font-family: 'Yandex font', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #21201F;
+}
+
+.text-shadow {
+  margin-left: -198px;
+  margin-top: -106px;
+
+  @media (max-width: 767px) {
+    margin-left: 0;
+    margin-top: 0;
+    width: inherit;
+  }
+}
+
+.link-yandex {
+  font-family: 'Yandex font', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #C5C5C5;
+}
+
+.footer-text {
+  font-family: 'Yandex font', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #C5C5C5;
+  padding-bottom: 128px;
+}

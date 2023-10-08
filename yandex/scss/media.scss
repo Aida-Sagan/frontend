@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+  .collage-photo {
+    display: none;
+  }
+
+  .collage-photo-mobile {
+    display: block;
+  }
+
+  .img-samokat {
+    display: none!important;
+  }
+
+  .svg-text-society {
+    display: none!important;
+  }
+
+  .samokat-image {
+    width: inherit;
+    right: 0;
+    margin-top: 0;
+  }
+
+  .purple-gradient {
+    display: none;
+  }
+
+  .plus-yandex {
+    display: none!important;
+  }
+}
