@@ -1,24 +1,15 @@
-@font-face {
-  font-family: 'Yandex font';
-  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
+@mixin yandex-font-face($weight, $style, $url) {
+  @font-face {
+    font-family: 'Yandex font';
+    src: url('#{$url}') format('woff');
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
 }
 
-@font-face {
-  font-family: 'Yandex font';
-  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Yandex font';
-  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
+@include yandex-font-face(900, normal, 'https://yastatic.net/s3/home/fonts/ys/4/text-black.woff');
+@include yandex-font-face(500, normal, 'https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff');
+@include yandex-font-face(400, normal, 'https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff');
 .first-page {
  background: linear-gradient(173deg, rgba(255, 122, 188, 0.2) 0%, transparent 100%);
 
