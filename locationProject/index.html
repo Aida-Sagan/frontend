@@ -15,19 +15,44 @@
   <div class="uk-grid uk-grid-collapse uk-flex-middle">
     <div class="uk-width-1-2@m block-text">
       <h2 class="block-text__title-field">Выбери участок в лучшей локации</h2>
-      <button class="uk-button uk-button-default uk-margin-small-right btn-river" id="btnVolga">На Волге</button>
-      <button class="uk-button uk-button-default uk-margin-small-right btn-river" id="btnValdai">На Валдае</button>
-      <button class="uk-button uk-button-default uk-margin-small-right btn-river" id="btnVazuza">На Вазузе</button>
-      <button class="uk-button uk-button-default btn-river" id="btnSeliger">На Селигере</button>
+      <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+        <li><a href="#">На Волге</a></li>
+        <li><a href="#">На Валдае</a></li>
+        <li><a href="#">На Вазузе</a></li>
+        <li><a href="#">На Селигере</a></li>
+      </ul>
 
-      <div class="uk-margin-top" id="locationDescription">
-        Выберите локацию, чтобы узнать больше.
-      </div>
+      <ul class="uk-switcher uk-margin">
+        <li>Волга — одна из самых величественных и красивых рек в России, а также самая многоводная в Европе.
+          Ее путь простирается через обширные леса, горы и холмы. Растительный и животный мир реки впечатляет своим многообразием.
+          Это место силы с богатой историей и уникальной природой, идеальное для жизни, отдыха и ведения бизнеса.</li>
+        <li>Валдай по праву называется озерным краем, здесь расположено несколько десятков озер.
+          Самые крупные из них — Велье, Селигер, Ужин, Ильмень, Боровно.Район отличается кристально чистым воздухом, а
+          незабываемые виды на чистые и глубокие лесные озера Валдая делают это место особенным.</li>
+        <li>Территория подойдет тем, кто высоко ценит индивидуальность,
+          высококлассную инфраструктуру. Здесь есть все,  что необходимо для жизни и отдыха в гармонии:
+          прекрасная экология, ощущение свободы и городской уровень комфорта. Открывается много возможностей  для отдыха:
+          прогулки на лодках и яхтах, дайвинг, катание на гидроциклах, пейнтбол, купание, рыбалка, охота, зимние виды спорта,
+          зимняя рыбалка</li>
+        <li>Селигер — одно из красивейших озер европейской части России.
+          Это не просто озеро, а система озер, соединенных между собой короткими проливами, образуя настоящий водный лабиринт.
+           Здесь можно насладиться отличной рыбалкой, собирать грибы и ягоды, а также отправиться в увлекательное путешествие
+          по озеру на лодке, чтобы посетить Нилову пустынь — овеянный легендами действующий монастырь
+        </li>
+      </ul>
 
-      <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-top look-fields-btn" uk-toggle="target: #modal">
+      <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-top look-fields-btn " uk-toggle="target: #modal">
         Смотреть участки
       </button>
     </div>
+
+    <div id="modal" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <iframe src="https://vt.bigland.ru/vt/eac40732-a3bc-4b16-b4a5-64381e88f54a/index.html" class="uk-width-expand" frameborder="0" uk-video></iframe>
+      </div>
+    </div>
+
     <div class="uk-width-1-2@m">
       <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
         <ul class="uk-slider-items uk-child-width-1-1">
@@ -56,6 +81,5 @@
 <!-- Подключаем скрипты из UIkit 3 -->
 <script src="node_modules/uikit/dist/js/uikit.min.js"></script>
 <script src="node_modules/uikit/dist/js/uikit-icons.min.js"></script>
-<script src="js/index.js"></script>
 </body>
 </html>

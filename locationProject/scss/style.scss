@@ -13,11 +13,15 @@
 }
 
 .block-text {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 
   &__title-field {
     @include text-styles('Bebas Neue Pro', 52px, 700, 68px, 0.01em, #274562, left);
   }
+}
+
+.uk-flex-middle {
+  align-items: unset!important;
 }
 
 .look-fields-btn {
@@ -37,23 +41,10 @@
   word-wrap: break-word;
 }
 
-.btn-river {
-  margin-right: 10px;
-  @include text-styles('Open Sans', 20px, 400, normal, normal, #B1C3CF, center);
-  background-color: transparent;
-  cursor: pointer;
-  border: none!important;
-  transition: background-color 0.3s, color 0.3s;
-  padding: 0 10px!important;
-  text-transform: none!important;
-
-  &:hover, &:active {
-    @include text-styles('Open Sans', 20px, 400, normal, normal, white, center);
-    background-color: #274562;
-  }
-}
-
 .uk-modal-dialog {
   background-color: transparent!important;
-  transform: translateY(70%)!important;
+}
+
+.uk-subnav-pill>.uk-active>a {
+  background-color: #274562;
 }

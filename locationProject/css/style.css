@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/bebas-neue");
 @import url("https://fonts.cdnfonts.com/css/open-sans");
 .block-text {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 .block-text__title-field {
   font-family: "Bebas Neue Pro", sans-serif;
@@ -11,6 +11,10 @@
   letter-spacing: 0.01em;
   text-align: left;
   color: #274562;
+}
+
+.uk-flex-middle {
+  align-items: unset !important;
 }
 
 .look-fields-btn {
@@ -41,36 +45,12 @@
   word-wrap: break-word;
 }
 
-.btn-river {
-  margin-right: 10px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #B1C3CF;
-  background-color: transparent;
-  cursor: pointer;
-  border: none !important;
-  transition: background-color 0.3s, color 0.3s;
-  padding: 0 10px !important;
-  text-transform: none !important;
-}
-.btn-river:hover, .btn-river:active {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: white;
-  background-color: #274562;
-}
-
 .uk-modal-dialog {
   background-color: transparent !important;
-  transform: translateY(70%) !important;
+}
+
+.uk-subnav-pill > .uk-active > a {
+  background-color: #274562;
 }
 
 /*# sourceMappingURL=style.css.map */
